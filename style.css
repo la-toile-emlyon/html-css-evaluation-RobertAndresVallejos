@@ -11,9 +11,9 @@ body{
     background-color: black;
 }
 
-/* h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
-} */
+}
 
 /* NAV */
 nav{
@@ -34,12 +34,8 @@ nav a{
     display: flex;
     list-style-type: none;
     margin: 0;
-    gap: 10px;
     padding: 0;
-}
-
-.liens_nav li{
-    width: 80px;
+    gap: 10px;
 }
 
 .liens_nav li a{
@@ -48,20 +44,21 @@ nav a{
     height: 40px;
     color: black;
     align-items: center;
+    width: 80px;
 }
 
 /* MAIN */
 
-main{
+/* main{
     width: 100%;
-}
+} */
 
 /* SECTION section_1 */
 
 #section_1{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    /* justify-content: space-between;
+    width: 100%; */
 }
 
 .clara_lenoir{
@@ -70,7 +67,7 @@ main{
     justify-content: center;
     width: 50%;
     padding: 20px;
-    background-color: lightgray;
+    background-color: #F4F4F4;
 }
 
 .clara_lenoir h1{
@@ -104,6 +101,7 @@ main{
 
 #section_2 p{
     text-align: center;
+    color: #606060;
 }
 
 .photos_liste{
@@ -127,6 +125,7 @@ main{
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
+    color: #606060;
 }
 
 /* SECTION section_3 */
@@ -135,8 +134,195 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F4F4F4;
+    padding: 20px 0px 80px 0px;
 }
 
-.article_1{
+.articles_1{
     display: flex;
+    gap: 10px;
+}
+
+.photo_2{
+    width: 100%;
+}
+
+.articles_1 article{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: #FDFCFA;
+}
+
+.articles_1 article .article_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.article_1 h6{
+    margin: 0;
+}
+
+/* SECTION section_4 section_5 section_6 section_7*/
+#section_4, #section_5, #section_6, #section_7{
+    padding: 60px 40px;
+}
+
+/* SECTION section_4 */
+
+#section_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section_4 h2{
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+.voyage_info{
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+}
+
+.voyage{
+    width: 50%;
+}
+
+.info{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h4{
+    margin: 0;
+}
+
+/* SECTION section_5 */
+
+#section_5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F4F4;;
+}
+
+.voyage_info{
+    display: flex;
+}
+
+.voyage_info_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* SECTION section_6 */
+/* rien */
+
+/* SECTION section_7 */
+
+#section_7{
+    background-color: #F4F4F4;
+}
+
+/* SECTION section_8 */
+
+#section_8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section_8 {
+    padding: 70px 0px;
+}
+
+#section_8 h2{
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.articles_2{
+    display: flex;
+    gap: 20px;
+}
+
+.articles_2 p{
+    font-size: 10px;
+    margin: 0;
+}
+
+.article_2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #F4F4F4;
+    padding: 15px;
+    gap: 10px;
+}
+
+.description{
+    display: flex;
+    gap: 10px   ;
+}
+
+.jacqueline{
+    border-radius: 100%;
+    height: 50px;
+}
+
+.nom_travail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.nom_travail p:first-child{
+    font-weight: 100;
+}
+
+.nom_travail p:last-child{
+    color: #606060;
+    font-size: 8px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #F4F4F4;
+    padding: 80px;
+    gap: 40px;
+}
+
+.kiwi{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.reseaux{
+    display: flex;
+    gap: 20px;
+}
+
+.banane{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.banane input{
+    border: transparent;
+    height: 30px;
+    width: 250px;
 }
