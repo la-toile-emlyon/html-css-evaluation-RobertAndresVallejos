@@ -6,16 +6,12 @@ body{
     margin: 0;
 }
 
-form{
-    padding-bottom: 20px;
-}
-
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat';
     color: #3E2C23;
 }
 
-a, p, li{
+a, p, li, input{
     color: #3E2C23;
     font-family: "Lato", sans-serif;
 }
@@ -51,10 +47,19 @@ nav a{
 .liens_nav li a{
     text-decoration: none;
     justify-content: center;
-    /* color: black; */
     align-items: center;
+    text-align: center;
     width: 80px;
     height: 40px;
+
+}
+
+.transition{ 
+    transition: all 0.3s ease-in-out;
+}
+
+.transition:hover{
+    background-color: rgb(118, 118, 118);
 }
 
 /* MAIN */
@@ -90,6 +95,11 @@ nav a{
     height: 100px;
     width: 100px;
     padding: 6px 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+    background-color: rgb(118, 118, 118);
 }
 
 /* SECTION section_2 */
@@ -103,15 +113,62 @@ nav a{
 
 .photos_liste{
     display: flex;
-    width: 100%;
+    width: 50%;
+    gap: 40px;
 }
 
 .photos{
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 50%;
 }
 
-.photos img{
-    width: 50px;
+.photos_div1{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 60%;
+}
+
+.photos_div1_1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.bienveillante{
+    position: absolute;
+    width: auto;
+    height: 56%;
+}
+
+.photos_div1_2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+.professionnel{
+    position: absolute;
+    width: auto;
+    height: 50%;
+}
+
+.photos_div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.creativite{
+    position: absolute;
+    width: auto;
+    height: 35%;
 }
 
 .liste{
@@ -172,8 +229,13 @@ nav a{
     background-color: black;
     color: white;
     border: solid 1.5px black;
+    transition: all 0.3s ease-in-out;
     width: 100px;
     padding: 6px 12px;
+}
+
+.bouton:hover{
+    background-color: rgb(118, 118, 118);
 }
 
 /* SECTION section_4 section_5 section_6 section_7*/
@@ -324,4 +386,8 @@ footer{
     border: transparent;
     height: 30px;
     width: 250px;
+}
+
+input:last-child{
+    margin-top: 20px;
 }
